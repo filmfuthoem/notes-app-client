@@ -1,0 +1,25 @@
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-west-2_YsE1h5czY' \
+--app-client-id='26tbg8r1lae68gp3afhnsfiapu' \
+--cognito-region='us-west-2' \
+--identity-pool-id='us-west-2:4c5c4050-eb6e-4148-8e38-b55b18a4e919' \
+--invoke-url='https://k1d26nqa1b.execute-api.us-west-2.amazonaws.com/prod' \
+--api-gateway-region='us-west-2' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"attachment": "1544731969039-android-chrome-256x256.png", "content": "test"}'
+
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-west-2_YsE1h5czY' \
+--app-client-id='26tbg8r1lae68gp3afhnsfiapu' \
+--cognito-region='us-west-2' \
+--identity-pool-id='us-west-2:4c5c4050-eb6e-4148-8e38-b55b18a4e919' \
+--invoke-url='https://k1d26nqa1b.execute-api.us-west-2.amazonaws.com/prod' \
+--api-gateway-region='us-west-2' \
+--path-template='/notes' \
+--method='post' \
+--body='{"attachment": "1544731969039-android-chrome-256x256.png", "content": "Hi", "noteId": "44905cd0-ff23-11e8-b4e4-93699f0c3ff2"}'
